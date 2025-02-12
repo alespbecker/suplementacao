@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formação em Suplementação Individualizada - Do papel em branco à prescrição de suplementos individualizada">
+    <meta name="keywords" content="suplementação, formação, prescrição, saúde, nutrição">
+    <title>Formação em Suplementação Individualizada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Importar Google Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Container de vídeo background -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            class="object-cover w-full h-full opacity-30"
+            poster="bg-poster.jpg">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="min-h-screen container mx-auto px-4 py-8 md:py-16">
+        <!-- Logo -->
+        <div class="mb-12">
+            <img src="logo.svg" alt="FSA One Logo" class="w-32 md:w-48">
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="max-w-2xl py-12 md:py-24">
+            <div class="inline-block bg-blue-600 text-white px-4 py-1 rounded-md mb-6">
+                FORMAÇÃO EM
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                <span class="block">Suplementação</span>
+                <span class="block text-blue-500">Individualizada</span>
+            </h1>
+
+            <p class="text-lg md:text-xl mb-12 text-gray-300">
+                Do papel em branco à prescrição de suplementos individualizada.
+            </p>
+
+            <!-- Formulário -->
+            <form id="leadForm" class="space-y-6">
+                <div>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        placeholder="Nome:"
+                        class="w-full px-4 py-3 rounded-md bg-gray-100 bg-opacity-20 border border-gray-600 focus:border-blue-500 focus:outline-none text-white"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="E-mail:"
+                        class="w-full px-4 py-3 rounded-md bg-gray-100 bg-opacity-20 border border-gray-600 focus:border-blue-500 focus:outline-none text-white"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <input 
+                        type="tel" 
+                        id="celular" 
+                        placeholder="Celular:"
+                        class="w-full px-4 py-3 rounded-md bg-gray-100 bg-opacity-20 border border-gray-600 focus:border-blue-500 focus:outline-none text-white"
+                        required
+                    >
+                </div>
+
+                <div class="flex items-start gap-2">
+                    <input 
+                        type="checkbox" 
+                        id="termos" 
+                        class="mt-1"
+                        required
+                    >
+                    <label for="termos" class="text-sm text-gray-300">
+                        Eu concordo. Ao informar seus dados, você afirma ser um Profissional da Área da Saúde e que concorda com nossa Política de Privacidade e nossos Termos de Uso descritos no rodapé do site para receber nossos conteúdos por e-mail.
+                    </label>
+                </div>
+
+                <button 
+                    type="submit"
+                    class="w-full py-4 bg-green-500 hover:bg-green-600 transition-colors rounded-md font-medium text-center"
+                >
+                    Quero ser avisado quando abrirem as inscrições
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html> 
